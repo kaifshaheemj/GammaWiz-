@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <title>K-Nearest Neighbors (KNN) Prediction</title>
+</head>
+
+<body>
+    <header>
+        <h1>K-Nearest Neighbors (KNN) Prediction</h1>
+    </header>
+
+    <div class="container">
+        <form action="/predict" method="post">
+            <label for="fLength">fLength:</label>
+            <input type="text" name="fLength" id="fLength" required>
+
+            <label for="fWidth">fWidth:</label>
+            <input type="text" name="fWidth" id="fWidth" required>
+
+            <label for="fSize">fSize:</label>
+            <input type="text" name="fSize" id="fSize" required>
+
+            <label for="fConc">fConc:</label>
+            <input type="text" name="fConc" id="fConc" required>
+
+            <label for="fConc1">fConc1:</label>
+            <input type="text" name="fConc1" id="fConc1" required>
+
+            <label for="fAsym">fAsym:</label>
+            <input type="text" name="fAsym" id="fAsym" required>
+
+            <label for="fM3Long">fM3Long:</label>
+            <input type="text" name="fM3Long" id="fM3Long" required>
+
+            <label for="fM3Trans">fM3Trans:</label>
+            <input type="text" name="fM3Trans" id="fM3Trans" required>
+
+            <label for="fAlpha">fAlpha:</label>
+            <input type="text" name="fAlpha" id="fAlpha" required>
+
+            <label for="fDist">fDist:</label>
+            <input type="text" name="fDist" id="fDist" required>
+
+            <input type="submit" value="Predict">
+        </form>
+
+        {% if prediction %}
+        <h2>Prediction: {{ prediction }}</h2>
+        {% endif %}
+    </div>
+
+    <footer>
+        &copy; 2023 Gamma Classifier
+    </footer>
+</body>
+
+</html>
