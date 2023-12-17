@@ -49,6 +49,9 @@ Use the trained KNN model to classify signals as gamma or non-gamma.
 
     Feel free to customize this template according to the specific details and features of your project. Update the installation steps, usage instructions, and any additional information that would be helpful for users and contributors.
 
+![image](https://github.com/kaifshaheemj/GammaWiz-/blob/main/images/image1.png)
+
+
 
 
 ## Authors
